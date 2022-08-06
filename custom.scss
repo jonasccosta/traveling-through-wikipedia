@@ -1,3 +1,8 @@
+/** Custom Styling Variables.
+* @author Jonas Costa
+*/
+
+//Colors
 $primary: #AD6136;
 $secondary: #404040;
 $dark:          #000000;
@@ -8,9 +13,10 @@ $text-muted: #414243;
 $danger: $primary;
 $success: $primary;
 
-
+// Background
 $background-image: url("src/assets/background.jpg");
 
+// Fonts
 $h1-font-size:                1rem * 4.5;
 $headings-font-family:        "Permanent Marker";
 $font-family-sans-serif: "Overpass";
@@ -25,8 +31,9 @@ $display-font-sizes: (
   8: 1.5rem
 );
 
-$spacer: 1rem !default;
 
+// Spacers
+$spacer: 1rem !default;
 $spacers: (
   0: 0,
   1: $spacer * .25,
@@ -39,16 +46,16 @@ $spacers: (
   8: $spacer * 10,
 ) !default;
 
+// Border
 $border-radius-xl:            1.25rem;
 
 
+// Shadows
 $box-shadow:                  0 0.5rem 2rem rgba($secondary, .15);
 $input-focus-box-shadow:                null !important;
 $btn-box-shadow:              null !important;
 $btn-focus-box-shadow:        null !important;
 $btn-active-box-shadow:       null !important;
-
-
 
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";

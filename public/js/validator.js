@@ -1,3 +1,8 @@
+/**
+ * Handles the validation of the submission form
+ * @author https://getbootstrap.com/docs/5.0/forms/validation/
+ */
+
 (function () {
     'use strict'
   
