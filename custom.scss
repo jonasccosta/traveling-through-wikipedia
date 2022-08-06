@@ -1,0 +1,54 @@
+$primary: #AD6136;
+$secondary: #404040;
+$dark:          #000000;
+$white: rgba(242, 242, 242, 0.75);
+$muted: #414243;
+$text-light: #9d9d9d;
+$text-muted: #414243;
+$danger: $primary;
+$success: $primary;
+
+
+$background-image: url("src/assets/background.jpg");
+
+$h1-font-size:                1rem * 4.5;
+$headings-font-family:        "Permanent Marker";
+$font-family-sans-serif: "Overpass";
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem,
+  8: 1.5rem
+);
+
+$spacer: 1rem !default;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 12.5,
+  8: $spacer * 10,
+) !default;
+
+$border-radius-xl:            1.25rem;
+
+
+$box-shadow:                  0 0.5rem 2rem rgba($secondary, .15);
+$input-focus-box-shadow:                null !important;
+$btn-box-shadow:              null !important;
+$btn-focus-box-shadow:        null !important;
+$btn-active-box-shadow:       null !important;
+
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";

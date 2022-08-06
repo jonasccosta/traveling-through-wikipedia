@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <title>Can We Get There?</title>
+        <link rel="icon" href="../assets/favicon.ico" />
+    
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/custom.min.css">
+        
+        
+      </head>
+    
+    
+    
+    <body class="vh-100" style="background-image: url('/assets/background.jpg'); background-size: cover;">
+    
+        <div class="positon-relative rounded-circle">
+            <div class="position-absolute top-0 end-0 p-2 rounded-circle">
+                    <button type="submit" class="btn btn-primary rounded-circle" onclick="window.location='/about';"><p class="text-white m-0 p-0"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg></p></button>
+            </div>
+            
+        </div>
+    
+        <div class="h-100  d-flex align-items-center justify-content-center p-4" >
+    
+                <div class="bg-white shadow rounded text-center w-75 m-auto d-flex align-items-center flex-column justify-content-center" style="--bs-bg-opacity: .9; min-height: 75%;">
+        
+                    <div class="container-md mt-6 mb-5 mb-auto">
+                        <h1 class="text-primary"> Can We Get There? </h1>
+                        <p class="fs-2 text-secondary">Travelling Through Wikipedia</p>
+                    </div>
+    
+                    <form class="mb-6 w-100 needs-validation" action="/" method="post" novalidate>
+                        <div class="row d-flex align-items-end justify-content-center ms-auto me-auto">
+                            <div class="col-md-4 text-start ms-1 mt-2 me-2">
+                                <label for="departurearticle" class="form-label mb-0">Departure Article</label>
+                                <input type="text" class="form-control rounded border border-primary input-sm" id="departurearticle" name="initialArticle" required placeholder="https://en.wikipedia.org/wiki/Earth" >
+                                <div class="invalid-feedback">
+                                    Please enter a link for a Wikipedia article
+                                  </div>
+                            </div>
+                            <div class="col-md-4 text-start ms-1 mt-2 me-2">
+                                <label for="arrivalarticle" class="form-label mb-0">Arrival Article</label>
+                                <input type="text" class="form-control rounded border border-primary" id="arrivalarticle" name="finalArticle" required placeholder="https://en.wikipedia.org/wiki/Moon">
+                                <div class="invalid-feedback">
+                                    Please enter a link for a Wikipedia article
+                                  </div>
+                            </div>
+                            <div class="col-md-2 text-start ms-1 mt-2 me-2">
+                                <label for="nofstops" class="form-label mb-0">Stops</label>
+                                <input type="number" class="form-control rounded border border-primary" id="nofstops" name="stops" required placeholder="0">
+                                <div class="invalid-feedback">
+                                      Enter a number
+                                  </div>
+                            </div>
+                            <div class="col-md-1 text-start ms-1 align-bottom mt-2 me-2">
+                                <button type="submit" class="btn btn-primary w-100 text-nowrap ps-0"><p class="mb-0 text-white">Go <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg></p></button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+    
+        
+        </div>
+    
+        <script id ="locationScript" type="module" src="/js/validator.js"></script>
+        
+        
+    
+    </body>
+</html>

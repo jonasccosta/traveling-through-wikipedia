@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <title>Can We Get There? - Result</title>
+        <link rel="icon" href="../assets/favicon.ico" />
+    
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/custom.min.css">
+        
+      </head>
+    
+    
+    
+    <body class="vh-100" style="background-image: url('/assets/background.jpg'); background-size: cover;">
+    
+        <div class="positon-relative rounded-circle">
+            <div class="position-absolute top-0 end-0 p-2 rounded-circle">
+                    <button type="submit" class="btn btn-primary rounded-circle" onclick="window.location='/';"><p class="text-white m-0 p-0"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                      </svg></p></button>
+            </div>
+            
+        </div>
+    
+        <div class="h-100  d-flex align-items-center justify-content-center p-4" >
+    
+                <div class="bg-white shadow rounded text-center w-75 m-auto d-flex align-items-center flex-column justify-content-center" style="--bs-bg-opacity: .9; min-height: 75%;">
+        
+                    <div class="container-md mt-4 mb-auto">
+                        <p class="h1 text-primary mb-4"> Result </p>
+    
+                        <div class="text-start ms-4 mt-5 text-center">
+                            <% var result = result %>
+                            <% var initial = initial %>
+                            <% var initialp = initialp %>
+                            <% var final = final %>
+                            <% var finalp = finalp %>
+                            <% var stops = stops %>
+                            <% if(result == "SUCCES"){ %>
+                                <p class="fs-3">Yes, we can get from <a href=<%=initial%> class="text-decoration-none"><strong class="text-primary"> <%= initialp %></a></strong> to <a href=<%=final%> class="text-decoration-none"> <strong class="text-primary"> <%= finalp %></strong></a> in at most <%= stops %> stops!</p>
+                             <% }  else if(result == "OHHH NO"){ %>
+                                <p class="fs-3">No, we can't get from <a href=<%=initial%> class="text-decoration-none"><strong class="text-primary"> <%= initialp %></a></strong> to <a href=<%=final%> class="text-decoration-none"> <strong class="text-primary"> <%= finalp %></strong></a> in at most <%= stops %> stops!</p>
+                                <% } else {%>
+                                    <p class="fs-3">Something is wrong. Please check if your input is a valid Wikipedia article</p>
+                                <% } %>
+
+
+                                
+                                
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <img src="../assets/icon.png" class="img-fluid mb-6" alt="Dark orange outlined plane flying around the earth icon">
+    
+    
+                            
+    
+                            
+                    </div>
+    
+                    
+                    
+    
+        
+        </div>
+    
+    
+        
+    
+    </body>
+</html>
